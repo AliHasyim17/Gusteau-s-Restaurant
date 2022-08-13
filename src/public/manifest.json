@@ -1,0 +1,35 @@
+{
+    "name": "Gusteau's Restaurant Lite",
+    "short_name": "Restaurant Lite",
+    "description": "Free Restaurant Finder for you",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1D5C63", 
+    "icons": [
+      {
+        "src": "/icons/icon-64x64.png",
+        "sizes": "64x64",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icons/icon-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icons/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }

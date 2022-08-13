@@ -1,0 +1,108 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 750px) {  
+    .nav {
+        z-index: 10;
+        background-color: #FF7700;
+        width: 300px;
+        position: absolute;
+
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+
+        transition: transform 0.3s ease;
+
+    }
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav-item {
+        display: list-item;
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .header-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .header-title {
+        font-size: 35px;
+    }
+    .nav{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .post-item-img{
+        width: 100%;
+        min-height: 100px
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    .post-item-content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .post-item-title {
+        font-size: 18px;
+    }
+
+    .post-item-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+  .img {
+    background-image: url("../public/images/heros/hero-image_4.jpg");
+  }
+}
+
+@media screen and (max-width: 750px){
+    .hero{
+        display: flex;
+        width: 100%;
+        background-image: url("../public/images/heros/hero-image_4-small.jpg");
+        background-size: cover;
+    }
+}

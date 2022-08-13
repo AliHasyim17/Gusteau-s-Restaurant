@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* skip link */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #FF7700;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header */
+
+.header {
+    min-height: 56px;
+    transition: min-height 0.3s;
+    background-color: #1D5C63;
+}
+
+.header-inner {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-title {
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: white;
+}
+
+.header-menu {
+    font-size: 32px;
+    margin: 0 auto;
+    display: block;
+    width: 44px;
+    background-color: #FF7700;
+    border-radius: 4px;
+}
+
+/* nav */
+
+.nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #FF7700;
+}
+
+.nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+
+/* hero */
+
+.hero{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 480px;
+    background-image: url("../public/images/heros/hero-image_4-large.jpg");
+    text-align: center;
+    background-color: aqua;
+}
+
+.hero-text{
+    margin: 0 auto;
+    color: white;
+}
+
+.explore{
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* main */
+
+main{
+    width: 100%;
+}
+
+.content{
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+/* restaurants */
+
+.restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    padding: 20px;
+}
+
+/* favorite page */
+.favorite-page{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+/* post */
+
+.post-item {
+    margin: 16px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.post-img-container{
+    position: relative;
+}
+
+.post-item-img{
+    width: 100%;
+    min-height: 300px
+}
+
+.post-item-location{
+    background-color: #1D5C63;
+    padding: 10px 50px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 5%;
+}
+
+.post-item-content {
+    padding: 32px 32px 32px 32px;
+}
+
+.post-item-content h1 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+    transition: 0.3s opacity;
+}
+
+.post-item-content h1 a{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+    transition: 0.3s opacity;
+}
+
+.post-item-link{
+    padding: 1.3em;
+    text-decoration: none;
+}
+
+.post-item-title:hover {
+    opacity: 0.5;
+}
+
+.post-item-title a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1.3em;
+}
+
+.post-item-description {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.post-item .post-item-content .post-item-description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+   
+/*
+  detail
+*/
+ 
+.detail {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;
+    padding: 20px;
+}
+   
+.detail .detail-img {
+    width: 100%;
+    max-width: 400px;
+}
+   
+.detail .detail-info h4 {
+    margin: 8px 0;
+}
+
+.detail-overview p{
+    padding-right: 20px;
+}
+
+.detail-review-list{
+    border: #1D5C63;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #1D5C63;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.detail-review-name{
+    color: black;
+    padding-bottom: 10px;
+}
+
+.detail-review-date{
+    font-size: 12px;
+    color: grey;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #1D5C63;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer h2{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #aaaaaa;
+}
+ 
+footer p a {
+  color: #FF7700;
+  padding: 1.3em;
+  text-decoration: none;
+}
+
+/*
+   Like
+*/
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #FF7700;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
